@@ -15,6 +15,11 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+
+  /*Author body styles start here*/
+
+  margin: 50px;
+  
 }
 
 /*
@@ -87,10 +92,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#map {
-  height:auto;
-  width:auto;
-}
+
+/*BODY*/
+
+
+
+/*HEADER*/
+
+
+/*MAIN*/
+
+
+/*HERO SECTION*/
+
+
+/*SERVICES*/
+
+
+/*PHONE NUMBER*/
+
+
+/*ABOUT & CONTACT*/
+
+
+/*FOOTER*/
 
 
 
@@ -181,6 +206,17 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+
+/*DESKTOP STYLES*/
+@media (min-width: 1200px) {
+
+}
+
+/*TABLET STYLES*/
+@media (min-width: 786px) {
+  
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
