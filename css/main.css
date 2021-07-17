@@ -17,10 +17,10 @@ html {
   line-height: 1.4;
 
   /*Author body styles start here*/
-
-  margin: 50px;
   
 }
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -70,6 +70,10 @@ video {
   vertical-align: middle;
 }
 
+img {
+  width: 100%;
+}
+
 /*
  * Remove default fieldset styles.
  */
@@ -88,32 +92,176 @@ textarea {
   resize: vertical;
 }
 
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-
-/*BODY*/
-
-
-
 /*HEADER*/
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #8AC8D0;
+  padding: 10px 20px 0 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-bottom: 15px solid #FE7a71;
+}
+
+.logo {
+  width: 35%;
+  height: 35%;
+}
+
+.logo {
+  padding: 10px 0 0 0;
+}
+
+#header i {
+  color: #FE7A71;
+  padding: 70px 0 0 50px;
+  font-size: 40px;
+}
+
+.header-phone {
+  padding-top: 50px;
+  font-size: 2em;
+  color: #F6F7F1;
+}
 
 
 /*MAIN*/
 
+h1, h2, h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+  font-family: 'Cabin Reg', sans-serif;
+}
 
 /*HERO SECTION*/
 
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0px;
+  background-color: #F6F7F1;
+}
+
+.hero-image {
+  width: 100%;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.hero-section .mission {
+  padding: 0 20px 0 20px;
+  text-align: left;
+  overflow: auto;
+}
 
 /*SERVICES*/
 
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
+  background-color: #2C666E;
+  color: #F6F7F1;
+  text-align: center;
+}
+
+.services h1 {
+  text-align: center;
+}
+
+.services i {
+  font-size: 35px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.services p {
+  color: #F6F7F1;
+}
 
 /*PHONE NUMBER*/
 
+.phone-number {
+  color: #FE7a71;
+  background-color: #F6F7F1;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-number i {
+  color: #2C666E;
+  font-size: 45px;
+}
+
+.phone-number h1 {
+  font-size: 50px;
+  padding: 0 0 0 15px;
+}
 
 /*ABOUT & CONTACT*/
 
+.about-contact {
+  background-color: #8AC8D0;
+  color: #F6F7F1;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-contact h2 {
+  padding: 20px 0;
+  color: #2C666E;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input, textarea {
+  padding: 15px;
+}
+
+.form input[type="text"] {
+  font-family: 'Cabin Reg', sans-serif;
+  color: #977272;
+  margin-bottom: 15px;
+}
+
+.form input[type="email"] {
+  font-family: 'Cabin Reg', sans-serif;
+  color: #977272;
+  margin-bottom: 15px;
+}
+
+.form textarea {
+  font-family: 'Cabin Reg', sans-serif;
+  color: #977272;
+  margin-bottom: 25px;
+}
+.form input[type="submit"] {
+  font-family: 'Cabin Reg', sans-serif;
+  color: #F6F7F1;
+  background-color: #2C666E;
+  width: 50%;
+}
 
 /*FOOTER*/
 
@@ -208,19 +356,49 @@ textarea {
    ========================================================================== */
 
 
-/*DESKTOP STYLES*/
-@media (min-width: 1200px) {
-
-}
-
 /*TABLET STYLES*/
 @media (min-width: 786px) {
   
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+  }
+
+  /*HERO SECTION*/
+
+  .hero-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+
+  .hero-image {
+    background-image; url('img/hospice2.jpg') center no-repeat;
+    background-size: cover;
+
+  }
+
+
 }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+/*DESKTOP STYLES*/
+@media (min-width: 1200px) {
+
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
+
+/*@media only screen and (min-width: 35em) {
+  Style adjustments for viewports that meet the condition
+}/*
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
