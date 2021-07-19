@@ -17,7 +17,16 @@ html {
   line-height: 1.4;
 
   /*Author body styles start here*/
-  
+
+
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 
@@ -103,32 +112,38 @@ textarea {
 #header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #8AC8D0;
-  padding: 10px 20px 0 20px;
+  padding: 0 20px 0 20px;
   font-family: 'Roboto Condensed', sans-serif;
   border-bottom: 15px solid #FE7a71;
 }
 
-.logo {
-  width: 35%;
-  height: 35%;
+.logo-only {
+  width: 30%;
+  height: 30%;
+  padding: 15px 0;
+  border-radius: 20px;
+
 }
 
-.logo {
+.top-phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
   padding: 10px 0 0 0;
+
 }
 
-#header i {
+.top-phone i {
+  font-size: 1.6em;
   color: #FE7A71;
-  padding: 70px 0 0 50px;
-  font-size: 40px;
+  padding: 0 10px
 }
 
 .header-phone {
-  padding-top: 50px;
-  font-size: 2em;
+  font-size: 1.6em;
   color: #F6F7F1;
 }
 
@@ -148,10 +163,10 @@ p {
 .hero-section {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: flex-start;
   padding: 0px;
   background-color: #F6F7F1;
+  text-align: left;
 }
 
 .hero-image {
@@ -160,11 +175,60 @@ p {
   margin-top: auto;
 }
 
-.hero-section .mission {
+.mission {
   padding: 0 20px 0 20px;
-  text-align: left;
-  overflow: auto;
 }
+
+.mission h1 {
+  font-size: 2em;
+  padding: 0 20px;
+  color: #FE7A71;
+}
+
+.mission h1 span {
+  font-size: .75em;
+  color: #FE7A71;
+}
+
+.mission p {
+  padding: 0 20px;
+  color: #2C666E;
+}
+
+.hero-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hero-phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 0 0 0 40px;
+  margin: 16px 0 0 0;
+}
+
+.hero-phone i {
+  color: #FE7A71;
+  font-size: 2em;
+}
+
+.hero-phone h2 {
+  font-size: 2em;
+  padding: 0 0 0 15px;
+  color: #2C666E;
+}
+
+.hero-call p {
+  padding: 0 20px 30px 40px;
+  color: #2C666E;
+  margin: 0;
+  font-size: 1em;
+}
+
 
 /*SERVICES*/
 
@@ -173,7 +237,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 30px;
+  padding: 30px 30px 50px 30px;
   background-color: #2C666E;
   color: #F6F7F1;
   text-align: center;
@@ -181,16 +245,18 @@ p {
 
 .services h1 {
   text-align: center;
+  font-size: 2em;
 }
 
 .services i {
-  font-size: 35px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  font-size: 4em;
+  padding: 30px 0 10px 0;
 }
 
 .services p {
   color: #F6F7F1;
+  padding: 0 40px;
+  text-align: justify;
 }
 
 /*PHONE NUMBER*/
@@ -207,11 +273,11 @@ p {
 
 .phone-number i {
   color: #2C666E;
-  font-size: 45px;
+  font-size: 2.25em;
 }
 
 .phone-number h1 {
-  font-size: 50px;
+  font-size: 2.25em;
   padding: 0 0 0 15px;
 }
 
@@ -228,6 +294,7 @@ p {
 .about-contact h2 {
   padding: 20px 0;
   color: #2C666E;
+  font-size: 2em;
 }
 
 .form {
@@ -243,29 +310,131 @@ p {
   font-family: 'Cabin Reg', sans-serif;
   color: #977272;
   margin-bottom: 15px;
+  border-radius: 20px;
 }
 
 .form input[type="email"] {
   font-family: 'Cabin Reg', sans-serif;
   color: #977272;
   margin-bottom: 15px;
+  border-radius: 20px;
 }
 
 .form textarea {
   font-family: 'Cabin Reg', sans-serif;
   color: #977272;
   margin-bottom: 25px;
+  border-radius: 20px;
 }
 .form input[type="submit"] {
-  font-family: 'Cabin Reg', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #F6F7F1;
-  background-color: #2C666E;
+  background-color: #FE7a71;
   width: 50%;
+  border-radius: 20px;
 }
 
 /*FOOTER*/
 
+footer {
+  background-color: #2C666E;
+}
 
+footer h1 {
+  font-size: 3em;
+  color: #F6F7F1;
+  margin: 0;
+  padding: 20px 0 0 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.special-skills ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.special-skills ul li i { 
+  color: #8AC8D0;
+  font-size: 2em;
+}
+
+.special-skills ul li p { 
+  color: #F6F7F1;
+  font-size: 1.5em;
+  padding: 0 0 25px 15px;
+  margin: 0;
+  font-family: 'Cabin Reg', sans-serif;
+}
+
+.languages ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #F6F7F1;
+  font-size: 1.5em;
+  margin: 0;
+  font-family: 'Cabin Reg', sans-serif;
+}
+
+.languages ul li {
+  padding: 20px 15px 0 0;
+}
+
+#map {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 0 30px 0;
+
+}
+
+#map h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 25px 0 15px 20px;
+  color: #F6F7F1;
+  font-size: 3em;
+}
+
+#map iframe {
+  border-radius: 5%;
+
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F6F7F1;
+  color: #2C666E;
+  padding: 0 15px;
+  font-family: 'Cabin Reg', sans-serif;
+}
+
+.rights {
+  display: flex;
+  flex-direction: column;
+  font-size: .85em;
+  padding: 15px 0 0 0;
+}
+
+.rights p {
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+
+.socials i {
+  font-size: 3em;
+  padding: 25px 6px 15px 6px;
+}
 
 /* ==========================================================================
    Helper classes
