@@ -83,6 +83,8 @@ img {
   width: 100%;
 }
 
+
+
 /*
  * Remove default fieldset styles.
  */
@@ -116,15 +118,12 @@ textarea {
   background-color: #8AC8D0;
   padding: 0 20px 0 20px;
   font-family: 'Roboto Condensed', sans-serif;
-  border-bottom: 15px solid #FE7a71;
+  border-bottom: 10px solid #FE7a71;
 }
 
 .logo-only {
-  width: 30%;
-  height: 30%;
-  padding: 15px 0;
-  border-radius: 20px;
-
+  width: 25%;
+  padding: 10px 0;
 }
 
 .top-phone {
@@ -158,6 +157,7 @@ p {
   font-family: 'Cabin Reg', sans-serif;
 }
 
+
 /*HERO SECTION*/
 
 .hero-section {
@@ -170,9 +170,12 @@ p {
 }
 
 .hero-image {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.elder-care {
   width: 100%;
-  margin-left: auto;
-  margin-top: auto;
 }
 
 .mission {
@@ -180,9 +183,10 @@ p {
 }
 
 .mission h1 {
-  font-size: 2em;
-  padding: 0 20px;
+  font-size: 2.05em;
+  padding: 30px 20px 0 20px;
   color: #FE7A71;
+  margin: 0 auto;
 }
 
 .mission h1 span {
@@ -191,8 +195,9 @@ p {
 }
 
 .mission p {
-  padding: 0 20px;
+  padding: 20px 15px;
   color: #2C666E;
+  margin: 0;
 }
 
 .hero-call {
@@ -200,14 +205,15 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 10px 0;
 }
 
 .hero-phone {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: baseline;
-  padding: 0 0 0 40px;
+  align-items: center;
+  padding: 0 0 0 20px;
   margin: 16px 0 0 0;
 }
 
@@ -220,13 +226,14 @@ p {
   font-size: 2em;
   padding: 0 0 0 15px;
   color: #2C666E;
+  margin: 0 auto;
 }
 
 .hero-call p {
-  padding: 0 20px 30px 40px;
+  padding: 0 20px 30px 20px;
   color: #2C666E;
   margin: 0;
-  font-size: 1em;
+  font-size: .9em;
 }
 
 
@@ -241,6 +248,7 @@ p {
   background-color: #2C666E;
   color: #F6F7F1;
   text-align: center;
+  border-top: 3px solid #8AC8D0;
 }
 
 .services h1 {
@@ -248,15 +256,16 @@ p {
   font-size: 2em;
 }
 
-.services i {
-  font-size: 4em;
+.service-type i {
+  font-size: 3.25em;
   padding: 30px 0 10px 0;
 }
 
-.services p {
+.service-type p {
   color: #F6F7F1;
-  padding: 0 40px;
+  padding: 0 45px;
   text-align: justify;
+  font-size: 1em;
 }
 
 /*PHONE NUMBER*/
@@ -269,6 +278,8 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-top: 3px solid #8AC8D0;
+  border-bottom: 3px solid #FE7a71;
 }
 
 .phone-number i {
@@ -286,20 +297,36 @@ p {
 .about-contact {
   background-color: #8AC8D0;
   color: #F6F7F1;
-  padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
+  padding: 0 25px 20px 25px;
 }
 
 .about-contact h2 {
-  padding: 20px 0;
   color: #2C666E;
   font-size: 2em;
+  padding: 40px 0 10px 0;
+  margin: 0;
+}
+
+.about {
+  padding: 0 10px 10px 10px;
+}
+
+.about p {
+  color: #F6F7F1;
+  font-size: 1.25em;
+  padding: 0 30px 0 0;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+}
+
+.contact-form h2 {
+  margin: 0;
+  padding: 20px 0;
 }
 
 .form input, textarea {
@@ -325,6 +352,7 @@ p {
   color: #977272;
   margin-bottom: 25px;
   border-radius: 20px;
+  height: 6em;
 }
 .form input[type="submit"] {
   font-family: 'Roboto Condensed', sans-serif;
@@ -332,20 +360,34 @@ p {
   background-color: #FE7a71;
   width: 50%;
   border-radius: 20px;
+  font-size: 1.15em;
 }
 
 /*FOOTER*/
 
 footer {
   background-color: #2C666E;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  padding: 40px 0 0 0;
+  border-top: 3px solid #F6F7F1;
 }
 
 footer h1 {
-  font-size: 3em;
+  font-size: 2em;
   color: #F6F7F1;
   margin: 0;
-  padding: 20px 0 0 20px;
+  padding: 0 0 0 20px;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
 }
 
 .special-skills ul li {
@@ -354,6 +396,7 @@ footer h1 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: baseline;
+  margin: 0;
 }
 
 .special-skills ul li i { 
@@ -363,26 +406,31 @@ footer h1 {
 
 .special-skills ul li p { 
   color: #F6F7F1;
-  font-size: 1.5em;
-  padding: 0 0 25px 15px;
+  font-size: 1.2em;
+  padding: 0 0 20px 15px;
   margin: 0;
   font-family: 'Cabin Reg', sans-serif;
+}
+
+.languages {
+  padding: 0 0 30px 0;
 }
 
 .languages ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: baseline;
   color: #F6F7F1;
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin: 0;
   font-family: 'Cabin Reg', sans-serif;
+  padding: 0 0 0 50px;
 }
 
 .languages ul li {
-  padding: 20px 15px 0 0;
+  padding: 20px 30px 0 0;
 }
 
 #map {
@@ -391,21 +439,21 @@ footer h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 30px 0 30px 0;
+  padding: 0 0 50px 0;
 
 }
 
 #map h1 {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
-  padding: 25px 0 15px 20px;
+  padding: 0 0 15px 0;
   color: #F6F7F1;
-  font-size: 3em;
+  font-size: 2em;
+  text-align: center;
 }
 
 #map iframe {
   border-radius: 5%;
-
 }
 
 .banner {
@@ -417,6 +465,7 @@ footer h1 {
   color: #2C666E;
   padding: 0 15px;
   font-family: 'Cabin Reg', sans-serif;
+  border-top: 3px solid #8AC8D0;
 }
 
 .rights {
@@ -433,7 +482,8 @@ footer h1 {
 
 .socials i {
   font-size: 3em;
-  padding: 25px 6px 15px 6px;
+  padding: 10px 6px 15px 6px;
+  color: #2C666E;
 }
 
 /* ==========================================================================
@@ -528,40 +578,333 @@ footer h1 {
 /*TABLET STYLES*/
 @media (min-width: 786px) {
   
+  /*HEADER*/
+
   #header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 20px 0 20px;
+    padding: 0 20px 0 20px;
   }
+
+  .logo-only {
+    width: 15%;
+    padding: 8px 0;
+  }
+
+  .top-phone i {
+    font-size: 2.25em;
+    color: #FE7A71;
+    padding: 0 10px
+  }
+  
+  .header-phone {
+    font-size: 2.25em;
+    color: #F6F7F1;
+    margin: 0;
+    padding: 25px 0 0 0;
+  }
+
+  /*MAIN*/
 
   /*HERO SECTION*/
 
   .hero-section {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: flex-start;
     padding: 0px;
   }
 
   .hero-image {
-    background-image; url('img/hospice2.jpg') center no-repeat;
-    background-size: cover;
+    height: 100%;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  .mission h1 {
+    font-size: 2.25em;
+    padding: 15px 15px 0 15px;
+    line-height: 35px;
+  }
+
+  .mission p {
+    padding: 10px 15px 10px 15px;
+  }
+
+  .hero-phone i {
+    color: #FE7A71;
+    font-size: 2.25em;
+  }
+  
+  .hero-call {
+    padding: 0 0 20px 0;
+  }
+
+  .hero-phone h2 {
+    font-size: 2.25em;
+    padding: 0 0 0 15px;
+    color: #2C666E;
+  }
+  
+  .hero-call p {
+    padding: 8px 20px;
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  /*SERVICES*/
+
+  .service-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .services h1 {
+    font-size: 2.5em;
+  }
+
+  .service-type i {
+    font-size: 3.5em;
+    padding: 30px 0 10px 0;
+  }
+
+  .service-type p {
+    padding: 30px 30px;
+    font-size: 1.15em;
+  }
+
+  .service-type .meds {
+    max-width: 33%;
+  }
+
+  .service-type .household {
+    max-width: 33%;
+  }
+
+  .service-type .companion {
+    max-width: 33%;
+  }
+
+  /*PHONE NUMBER*/
+
+  .phone-number i {
+    color: #2C666E;
+    font-size: 3em;
+  }
+  
+  .phone-number h1 {
+    font-size: 3em;
+    padding: 0 0 0 15px;
+  }
+
+  /*ABOUT & CONTACT*/
+
+  .about-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .about-contact h2 {
+    font-size: 2.25em;
+  }
+
+  .about {
+    width: 100%;
+    padding: 0 60px 0 10px;
+  }
+
+  .about p {
+    padding: 0 20px 0 0;
+    font-size: 1.25em;
+  }
+
+  .about-contact .about {
+    max-width: 50%;
 
   }
 
+  .about-contact .contact-form {
+    max-width: 50%;
+  }
 
-}
+  .contact-form {
+    width: 100%;
+    padding: 0 15px 25px 20px;
+  }
+
+  .contact-form h2 {
+    padding: 40px 0 40px 10px;
+  }
+
+  .form input[type="submit"] {
+    font-size: 1.3em;
+  }
+
+  /*FOOTER*/
+
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 25px 0 15px;
+  }
+
+  footer h1 {
+    font-size: 1.65em
+  }
+
+  .languages {
+    padding: 0 0 0 15px;
+  }
+
+  .languages ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+  }
+
+  .footer-top .special-skills {
+    max-width: 30%;
+  }
+
+  .footer-top .languages {
+    max-width: 30%;
+  }
+
+  .footer-top #map {
+    max-width: 40%;
+  }
+
+  #map h1 {
+    padding: 0 0 15px 0;
+    font-size: 1.65em;
+  }
+
 
 
 /*DESKTOP STYLES*/
 @media (min-width: 1200px) {
 
+  /*HEADER*/
+
   #header {
+    padding: 0 20px 0 20px;
+  }
+
+  .logo-only {
+    width: 13%;
+    padding: 8px 0;
+  }
+
+  .top-phone i {
+    font-size: 2.6em;
+  }
+  
+  .header-phone {
+    font-size: 2.6em;
+  }
+
+  /*MAIN*/
+
+
+  /*HERO SECTION*/
+
+  .mission h1 {
+    font-size: 4em;
+    padding: 40px 15px 0 15px;
+    line-height: 60px;
+  }
+
+  .mission p {
+    padding: 25px 15px 25px 30px;
+  }
+
+  .hero-phone i {
+    font-size: 2.5em;
+  }
+  
+  .hero-phone h2 {
+    font-size: 2.5em;
+  }
+  
+  .hero-call p {
+    font-size: 1.25em;
+    padding: 8px 20px;
+  }
+
+  /*SERVICES*/
+
+  .service-type {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .services h1 {
+    font-size: 4em;
+  }
+
+  .service-type i {
+    font-size: 4em;
+    padding: 30px 0 10px 0;
+  }
+
+  .service-type p {
+    padding: 30px;
+    font-size: 1.25em;
+  }
+
+  .service-type .meds {
+    max-width: 33%;
+  }
+
+  .service-type .household {
+    max-width: 33%;
+  }
+
+  .service-type .companion {
+    max-width: 33%;
+  }
+
+  /*PHONE NUMBER*/
+
+  .phone-number i {
+    color: #2C666E;
+    font-size: 3.5em;
+  }
+  
+  .phone-number h1 {
+    font-size: 3.5em;
+    padding: 0 0 0 15px;
+  }
+
+  /*ABOUT & CONTACT*/
+
+
+  .form input[type="submit"] {
+    font-size: 1.75em;
+  }
+
+  /*FOOTER*/
+
+  .footer-top {
+    padding: 0 50px 0 50px;
+  }
+
+  footer h1 {
+    font-size: 2.25em
+  }
+  #map h1 {
+    font-size: 2.25em;
   }
 }
 
