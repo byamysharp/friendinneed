@@ -198,6 +198,7 @@ p {
   padding: 20px 15px;
   color: #2C666E;
   margin: 0;
+  line-height: 25px;
 }
 
 .hero-call {
@@ -253,7 +254,7 @@ p {
 
 .services h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .service-type i {
@@ -261,11 +262,18 @@ p {
   padding: 30px 0 10px 0;
 }
 
+.service-type h2 {
+  font-size: 1.75em;
+  margin: 0;
+}
+
 .service-type p {
   color: #F6F7F1;
-  padding: 0 45px;
-  text-align: justify;
-  font-size: 1em;
+  padding: 20px 100px 40px 100px;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
+  line-height: 20px;
 }
 
 /*PHONE NUMBER*/
@@ -329,38 +337,38 @@ p {
   padding: 20px 0;
 }
 
-.form input, textarea {
+.form input {
   padding: 15px;
+  color: #6e6e6e;
 }
 
-.form input[type="text"] {
+.form input[value="Name"] {
   font-family: 'Cabin Reg', sans-serif;
-  color: #977272;
   margin-bottom: 15px;
   border-radius: 20px;
 }
 
 .form input[type="email"] {
   font-family: 'Cabin Reg', sans-serif;
-  color: #977272;
   margin-bottom: 15px;
   border-radius: 20px;
 }
 
-.form textarea {
+.form input[name="message"] {
   font-family: 'Cabin Reg', sans-serif;
-  color: #977272;
   margin-bottom: 25px;
   border-radius: 20px;
   height: 6em;
 }
-.form input[type="submit"] {
+
+.form button[type="submit"] {
   font-family: 'Roboto Condensed', sans-serif;
   color: #F6F7F1;
   background-color: #FE7a71;
   width: 50%;
   border-radius: 20px;
   font-size: 1.15em;
+  height: 3em;
 }
 
 /*FOOTER*/
@@ -390,6 +398,10 @@ footer h1 {
   margin: 0;
 }
 
+.special-skills {
+  padding: 20px 0;
+}
+
 .special-skills ul li {
   list-style-type: none;
   display: flex;
@@ -413,7 +425,7 @@ footer h1 {
 }
 
 .languages {
-  padding: 0 0 30px 0;
+  padding: 20px 0;
 }
 
 .languages ul {
@@ -430,7 +442,7 @@ footer h1 {
 }
 
 .languages ul li {
-  padding: 20px 30px 0 0;
+  padding: 20px 30px 20px 0;
 }
 
 #map {
@@ -439,7 +451,7 @@ footer h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 0 50px 0;
+  padding: 20px 0 50px 0;
 
 }
 
@@ -480,10 +492,33 @@ footer h1 {
   margin: 0;
 }
 
+.rights a:link {
+  color: #2C666E;
+}
+
+.rights a:visited {
+  color: #50ADB9;
+}
+
+.rights a:hover {
+  color: #50ADB9;
+}
+
 .socials i {
   font-size: 3em;
   padding: 10px 6px 15px 6px;
+}
+
+.socials a:link {
   color: #2C666E;
+}
+
+.socials a:visited {
+  color: #50ADB9;
+}
+
+.socials a:hover {
+  color: #50ADB9;
 }
 
 /* ==========================================================================
@@ -618,6 +653,16 @@ footer h1 {
   }
 
   .hero-image {
+    min-width: 44%;
+    max-width: 55%;
+  }
+
+  .mission {
+    max-width: 60%;
+    padding: 2%;
+  }
+
+  .hero-image img {
     height: 100%;
     margin-left: auto;
     margin-top: auto;
@@ -630,7 +675,13 @@ footer h1 {
   }
 
   .mission p {
+    font-size: 1.2em;
     padding: 10px 15px 10px 15px;
+    line-height: 32px;
+  }
+
+  .hero-phone {
+    margin: 0;
   }
 
   .hero-phone i {
@@ -649,12 +700,16 @@ footer h1 {
   }
   
   .hero-call p {
-    padding: 8px 20px;
+    padding: 8px 20px 0 20px;
     font-size: 1.2em;
     margin: 0;
   }
 
   /*SERVICES*/
+
+  .services {
+    padding: 30px;
+  }
 
   .service-type {
     display: flex;
@@ -664,12 +719,17 @@ footer h1 {
   }
 
   .services h1 {
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
   .service-type i {
     font-size: 3.5em;
     padding: 30px 0 10px 0;
+  }
+
+  .service-type h2 {
+    font-size: 2em;
+    margin: 0 0 16px 0;
   }
 
   .service-type p {
@@ -678,15 +738,15 @@ footer h1 {
   }
 
   .service-type .meds {
-    max-width: 33%;
+    width: 33%;
   }
 
   .service-type .household {
-    max-width: 33%;
+    width: 33%;
   }
 
   .service-type .companion {
-    max-width: 33%;
+    width: 33%;
   }
 
   /*PHONE NUMBER*/
@@ -753,15 +813,27 @@ footer h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 25px 0 15px;
+    padding: 0 25px;
   }
 
   footer h1 {
     font-size: 1.65em
   }
 
+  .special-skills h1 {
+    padding: 0;
+  }
+
+  .special-skills ul {
+    padding: 0 0 0 25px;
+  }
+  
   .languages {
-    padding: 0 0 0 15px;
+    padding: 20px 0 0 0;
+  }
+
+  .languages h1 {
+    padding: 0;
   }
 
   .languages ul {
@@ -769,6 +841,11 @@ footer h1 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
+    padding: 0 0 0 25px;
+  }
+
+  .languages ul li {
+    padding: 15px 30px 15px 0;
   }
 
   .footer-top .special-skills {
@@ -817,6 +894,10 @@ footer h1 {
 
   /*HERO SECTION*/
 
+  .mission {
+    max-width: 60%;
+    padding: 0.5% 1%;
+  }
   .mission h1 {
     font-size: 4em;
     padding: 40px 15px 0 15px;
@@ -824,7 +905,9 @@ footer h1 {
   }
 
   .mission p {
+    font-size: 1.5em;
     padding: 25px 15px 25px 30px;
+    line-height: 35px;
   }
 
   .hero-phone i {
